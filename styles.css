@@ -5,6 +5,9 @@ body, h1, h2{
 html{
     margin-top: 64px;
 }
+p{
+    text-transform: capitalize;
+}
 .container{
     max-width: 1200px;
     margin: auto;
@@ -91,6 +94,7 @@ button:hover{
 }
 #grid-container div h2{
     margin: 6px 12px;
+    text-transform: capitalize;
 }
 #grid-container div p{
     display: inline;
@@ -120,5 +124,13 @@ button:hover{
 }
 #grid-container div p.flying{
     background: #ccdfeb;
+    color: #121212;
+}
+#grid-container div p.bug{
+    background: #397815;
+    color: #f8fafa;
+}
+#grid-container div p.normal{
+    background: #c0c2bf;
     color: #121212;
 }
