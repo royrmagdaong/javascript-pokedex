@@ -3,7 +3,7 @@ body, h1, h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 html{
-    margin-top: 64px;
+    margin: 64px 0;
 }
 p{
     text-transform: capitalize;
@@ -83,7 +83,6 @@ button:hover{
     row-gap: 24px;
 }
 #grid-container div{
-    height: 400px;
     background: #fff;
     padding: 0 6px;
 }
@@ -133,4 +132,30 @@ button:hover{
 #grid-container div p.normal{
     background: #c0c2bf;
     color: #121212;
+}
+
+/* media queries */
+@media (max-width: 800px) {
+    #grid-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .filter-search{
+        flex-direction: column;
+        /* align-items: start; */
+    }
+    .filter-search div{
+        margin-top: 8px;
+    }
+    #pokemon-type{
+        margin-right: 4px;
+    }
+    
+}
+@media (max-width: 600px) {
+    #grid-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    #pokemon-name{
+        width: 254px;
+    }
 }
